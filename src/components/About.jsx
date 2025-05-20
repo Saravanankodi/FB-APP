@@ -3,20 +3,20 @@ import vector from '../assets/about.png'
 
 const data = [
     {
-        tittle:"2024  year",
-        condent:"Since our inception, we have become a trusted partner for businesses looking to enhance their operations through technology."
+        tittle:"10000 donors",
+        condent:"Since our inception in 2023, we have connected thousands of donors with recipients in need, making a significant impact in emergency situations."
     },
     {
-        tittle:"100 %",
-        condent:"We are proud to have achieved a 100% client satisfaction rate, reflecting our commitment to excellence."
+        tittle:"5000 recipients",
+        condent:"Our platform has facilitated over 5, 000 successful blood donations, ensuring that those in need receive timely assistance."
     },
     {
-        tittle:"15  members",
-        condent:"Our team is composed of dedicated professionals who are passionate about technology and committed to delivering exceptional results."
+        tittle:"100 partnerships",
+        condent:"We have established partnerships with over 100 local blood banks to streamline the donation process and enhance community support."
     },
     {
-        tittle:"5 projects",
-        condent:"We have successfully completed over 10 major projects, showcasing our expertise in software development."
+        tittle:"50 events",
+        condent:"Our outreach initiatives have led to more than 50 community events aimed at promoting blood donation awareness and engagement."
     }
 ]
 function About() {
@@ -28,11 +28,11 @@ function About() {
         </aside>
         <main className="w-full lg:w-3/5">
             <header className="w-full">
-                <h2 className="heading text-3xl lg:text-58 text-center my-5 lg:text-left">
-                    Our Journey and Team
+                <h2 className="heading text-3xl lg:text-5xl text-primary text-center my-5 lg:text-left">
+                    Our Mission & Vision
                 </h2>
                 <p className="text text-lg lg:text-22 text-justify">
-                Founded in 2024, DesFlyer has been dedicated to providing innovative software solutions that empower businesses. Our mission is to deliver high-quality products tailored to your needs.
+                At Finding Blood, we strive to create a global network of voluntary blood donors. Our goal is to ensure that life-saving blood is always available when needed, while raising awareness about the importance of blood donation.
                 </p>
             </header>
             <div className="w-full lg:grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-6 py-6">

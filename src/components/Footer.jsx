@@ -9,7 +9,7 @@ import whatapp from '../assets/WhatsApp.png'
 function Footer() {
   return (
     <>
-    <footer className="w-full lg:py-4 lg:px-14 text-center lg:text-left  bg-white text-black p-5 border-t-2 border-primary">
+    <footer className="w-full lg:py-4 lg:px-14 text-center lg:text-left  bg-footer text-black p-5 border-t-2">
         <header className="w-full">
             <img src={logo} alt="logo" className="w-fit h-12 m-auto lg:m-0" />
         </header>
@@ -22,13 +22,8 @@ function Footer() {
                 </div>
                 <div className="w-fit hidden lg:block">
                     <p className="text text-xl my-5 tittle text-28">About Us</p>
-                    <p className="text text-xl my-5 tittle text-28">Services</p>
-                    <p className="text text-xl my-5 tittle text-28">Portfolio</p>
-                </div>
-                <div className="w-fit hidden lg:block">
-                    <p className="text text-xl my-5 tittle text-28">Customer Development</p>
-                    <p className="text text-xl my-5 tittle text-28">Mobile Apps</p>
-                    <p className="text text-xl my-5 tittle text-28">Web Design</p>
+                    <p className="text text-xl my-5 tittle text-28">How It Works</p>
+                    <p className="text text-xl my-5 tittle text-28">Contact US</p>
                 </div>
                 <div className="w-fit">
                     <h2 className="heading text-32">Follow as  on social media</h2>

@@ -5,7 +5,72 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderWidth:{
+        nav:"0.5px"
+      },
+      colors:{
+        primary:"#F11616",
+        review:"#D9D9D980",
+        footer:"#D9D9D9",
+        navbar:"#E11919"
+      },
+      fontSize:{
+        64:"64px",
+        62:"62px",
+        58:"58px",
+        54:"54px",
+        44:"44px",
+        42:"42px",
+        40:"40px",
+        38:"38px",
+        32:"32px",
+        28:"28px",
+        26:"26px",
+        22:"22px",
+        20:"20px",
+        16:"16px",
+        12:"12px",
+      },
+      width:{
+        620:"620px",
+        600:"600px",
+        500:"500px",
+        370:"370px",
+      },
+      height:{
+        35:"35px",
+        50:"50px",
+        64:"64px",
+        70:"70px",
+        100:"100px",
+        270:"270px",
+        324:"324px",
+        370:"370px",
+        382:"382px",
+        400:"400px",
+        425:"425px",
+        436:"436px",
+        450:"450px",
+        472:"472px",
+        500:"500px",
+        516:"516px",
+        524:"524px",
+        560:"560px",
+        592:"592px",
+      },
+      borderRadius:{
+        20:"20px",
+        25:"25px"
+      },
+      lineHeight:{
+        head:"78px",
+        tittle:"52px"
+      },
+      maxWidth:{
+        card:"620px"
+      }
+    },
   },
   plugins: [],
 }
