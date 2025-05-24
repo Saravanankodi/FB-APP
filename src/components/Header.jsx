@@ -5,9 +5,9 @@ function Header() {
   return (
     <>
     <section className="w-full lg:h-600 p-5 lg:grid grid-cols-[1fr_500px] place-items-center gap-5 lg:px-14 lg:py-14">
-        <div className="w-full m-auto lg:h-500 lg:w-500 lg:hidden block rounded-lg">
+        <div className="w-full m-auto lg:h-500 lg:w-500 relative lg:hidden block rounded-lg">
             <img src={headerImg} alt="header vector " className="h-auto w-370 m-auto lg:h-500 lg:w-500 rounded-lg" />
-            <img src={logo} alt="logo" className='h-75 w-75 fixed top-12 border-2 border-border right-5 bg-white rounded-full' />
+            <img src={logo} alt="logo" className='h-75 w-75 absolute top-4 border-2 border-border right-2.5 bg-white rounded-full' />
         </div>
         <main className="w-full h-auto block col-start-1 align-top">
                 <span className='text-primary text-center lg:text-left heading text-40 lg:text-54 block lg:my-2'>Finding Blood</span>
