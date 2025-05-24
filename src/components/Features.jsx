@@ -27,7 +27,7 @@ export const Card = ({vector,tittle,condent}) => {
     <>
     <section className="w-full h-auto flex flex-col gap-2 my-2.5 lg:gap-4">
         <img src={vector} alt="vector-img" className="w-full order-1 lg:-order-1 h-auto m-auto" />
-        <h2 className="tittle text-nowrap lg:text-32 text-28 text-center">
+        <h2 className="tittle text-nowrap lg:text-32 text-2xl text-center">
             {tittle}
         </h2>
         <p className="text text-lg">
