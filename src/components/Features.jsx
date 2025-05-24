@@ -27,13 +27,13 @@ export const Card = ({vector,tittle,condent}) => {
     <>
     <section className="w-full h-auto flex flex-col gap-2 my-2.5 lg:gap-4">
         <img src={vector} alt="vector-img" className="w-full order-1 lg:-order-1 h-auto m-auto" />
-        <h2 className="tittle lg:text-32 text-28 text-center">
+        <h2 className="tittle text-nowrap lg:text-32 text-28 text-center">
             {tittle}
         </h2>
-        <p className="text text-base">
+        <p className="text text-lg">
             {condent}
         </p>
-        <a href="" className="btn-secondary">Learn More</a>
+        <a href="" className="btn-secondary m-auto lg:m-0">Learn More</a>
     </section>
     </>
   )
@@ -52,7 +52,7 @@ function Features() {
                 Our platform simplifies the process of connecting blood donors with recipients in need. From registration to donation, we provide a seamless experience that ensures quick access to life-saving blood. Discover how Finding Blood makes a difference in critical situations.
             </p>
         </header>
-        <main className="w-full lg:grid grid-cols-3 gap-10">
+        <main className="w-full lg:grid grid-cols-3 items-start gap-10">
             {data.map((item,index)=>(
                 <Card 
                 key={index}

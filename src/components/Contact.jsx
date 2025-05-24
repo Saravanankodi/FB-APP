@@ -11,14 +11,14 @@ function Contact() {
             </h2>
             <p className="tittle text-28">We are here to assist you with any inquiries.</p>
 
-            <ul className="my-5">
-              <li className="tittle text-base">
+            <ul className="my-5 list-disc list-inside">
+              <li className="tittle text-lg my-4">
                 <a href="mail:desflyer.tech@gmail.com" className="text-base">desflyer.tech@gmail.com</a>
               </li>
-              <li className="tittle text-base">
+              <li className="tittle text-lg my-2">
                 <a href="" className="link">+91 9092579460</a>
               </li>
-              <li className="tittle text-base">
+              <li className="tittle text-lg my-4">
               DesFlyer ,Kings College of Engineering 
               </li>
             </ul>

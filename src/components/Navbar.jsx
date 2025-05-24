@@ -3,11 +3,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/Logo.png'
 // import icon from '../../assets/logo1.png'
 const navigation = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'About Us', href: '/about', current: false },
-  { name: 'Services', href: '/services', current: false },
-  { name: 'Portfolio', href: '/portfolio', current: false },
-  { name: 'Contact', href: '/contact', current: false },
+  // { name: 'Home', href: '/', current: false },
+  { name: 'About Us', href: '#about', current: false },
+  { name: 'How It Works', href: '#works', current: false },
+  { name: 'Contact Us', href: '#contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -30,7 +29,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-between">
             <div className="flex shrink-0 items-center gap-2.5 sm:gap-5">
-              <h2 className="heading text-32 sm:text-42">Finding Blood</h2>
+              <h2 className="heading text-32 text-primary sm:text-42">Finding Blood</h2>
             </div>
             <div className="hidden sm:block">
               <div className="h-full flex gap-10 items-center justify-center">
@@ -47,10 +46,8 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
-                <div className="btns hidden sm:flex items-center justify-center tittle gap-5 text-2xl">
-                <a href="" className="btn-secondary text-primary">Learn More</a>
-                <a href="" className="btn-primary text-white">Get Start</a>
-            </div>
+                <a href="" className="btn-secondary">Donate Now</a>
+                <a href="" className="btn-primary text-white">Learn More</a>
               </div>
             </div>
           </div>
@@ -74,8 +71,6 @@ export default function Navbar() {
               {item.name}
             </DisclosureButton>
           ))}
-          <a href="" className="btn-secondary text-base py-1 px-2 text-primary">Learn More</a>
-          <a href="" className="btn-primary text-base py-1 px-2 text-white">Get Start</a>
         </div>
       </DisclosurePanel>
     </Disclosure>

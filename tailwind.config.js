@@ -11,6 +11,7 @@ export default {
       },
       colors:{
         primary:"#F11616",
+        border:"#0496ff",
         review:"#D9D9D980",
         footer:"#D9D9D9",
         navbar:"#E11919"
@@ -37,12 +38,14 @@ export default {
         600:"600px",
         500:"500px",
         370:"370px",
+        100:"100px",
+        75:"75px"
       },
       height:{
         35:"35px",
         50:"50px",
         64:"64px",
-        70:"70px",
+        75:"75px",
         100:"100px",
         270:"270px",
         324:"324px",

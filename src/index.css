@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Anuphan:wght@100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Iceberg&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,6 +40,19 @@
     }
 }
 @layer components{
+  .btn
+  {
+    display: block;
+    width: fit-content;
+    padding: 10px 15px;
+    border: 1px solid #F11616;
+    color: #F11616;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
     .btn-primary
   {
     display: block;
