@@ -5,7 +5,7 @@ import logo from '../assets/Logo.png'
 const navigation = [
   // { name: 'Home', href: '/', current: false },
   { name: 'About Us', href: '#about', current: false },
-  { name: 'How It Works', href: '#works', current: false },
+  { name: 'How It Works', href: '#work', current: false },
   { name: 'Contact Us', href: '#contact', current: false },
 ]
 
@@ -47,7 +47,7 @@ export default function Navbar() {
                   </a>
                 ))}
                 <a href="" className="btn-secondary">Donate Now</a>
-                <a href="" className="btn-primary text-white">Learn More</a>
+                <a href="https://www.freeprivacypolicy.com/live/4941bf09-f4ef-42c1-8adf-4b72df7a5d0f" target='_blank' className="btn-primary text-white">Learn More</a>
               </div>
             </div>
           </div>

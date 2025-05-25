@@ -44,10 +44,9 @@
   {
     display: block;
     width: fit-content;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border: 1px solid #F11616;
     color: #F11616;
-    border-radius: 5px;
     font-weight: 400;
     font-size: 22px;
     line-height: 100%;
@@ -59,7 +58,6 @@
     width: fit-content;
     padding: 10px 15px;
     background: #F11616;
-    border-radius: 5px;
     font-family: ABeeZee;
     font-weight: 400;
     font-size: 22px;
@@ -72,7 +70,6 @@
     padding: 10px 15px;
     border: 1px solid #F11616;
     color: #F11616;
-    border-radius: 5px;
     font-family: ABeeZee;
     font-weight: 400;
     font-size: 22px;

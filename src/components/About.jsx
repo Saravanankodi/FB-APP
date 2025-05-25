@@ -22,23 +22,23 @@ const data = [
 function About() {
   return (
     <>
-    <section className="w-full h-auto flex-col lg:flex-row flex items-center justify-center p-5">
-        <aside className="w-full lg:w-2/5 order-1 lg:-order-1">
-                <img src={vector} alt="vector" className="w-full p-5" />
+    <section className="w-full h-auto flex-col sm:flex-row flex items-center justify-center p-5" id='about'>
+        <aside className="w-full sm:w-2/5 order-1 sm:-order-1">
+                <img src={vector} alt="vector" className="w-full sm:p-5" />
         </aside>
-        <main className="w-full lg:w-3/5">
+        <main className="w-full sm:w-3/5">
             <header className="w-full">
-                <h2 className="heading text-42 lg:text-5xl text-primary text-center my-5 lg:text-left">
+                <h2 className="heading text-42 sm:text-5xl text-primary text-center sm:my-5 sm:text-left">
                     Our Mission & Vision
                 </h2>
                 <p className="text text-22 text-justify">
                 At Finding Blood, we strive to create a global network of voluntary blood donors. Our goal is to ensure that life-saving blood is always available when needed, while raising awareness about the importance of blood donation.
                 </p>
             </header>
-            <div className="w-full lg:grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-6 py-6">
+            <div className="w-full sm:grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-6 py-6">
                 {data.map((item,index)=>(
-                    <div className="w-full my-2 lg:m-0" key={index}>
-                        <h2 className="heading text-32 lg:text-38  text-center lg:text-left">
+                    <div className="w-full my-2 sm:m-0" key={index}>
+                        <h2 className="heading text-32 sm:text-38  text-center sm:text-left">
                             {item.tittle}
                         </h2>
                         <p className="text text-lg text-justify">
