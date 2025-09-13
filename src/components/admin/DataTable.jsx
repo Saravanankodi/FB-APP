@@ -1,35 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../firebase_config';
 
 function DataTable() {
-  const data = [
-    {
-      id:"001",
-      name:"haran",
-      blood:"o+ve",
-      dob:"5-10-2005",
-      phone:256588622,
-      place:"papanasam",
-      status:"avaible"
-    },
-    {
-      id:"001",
-      name:"haran",
-      blood:"o+ve",
-      dob:"5-10-2005",
-      phone:256588622,
-      place:"papanasam",
-      status:"avaible"
-    },
-    {
-      id:"001",
-      name:"haran",
-      blood:"o+ve",
-      dob:"5-10-2005",
-      phone:256588622,
-      place:"papanasam",
-      status:"avaible"
-    }
-  ]
+ const[user,setUser]=useState([]);
+ useEffect(()=>{
+  const fetchdata = async () => {
+const querySnapshot = await 
+getDocs(collection(db,'user_profile')) ;
+const userdata =querySnapshot.docs.map((doc)=>
+({
+ id:doc.Id,
+name :doc.name,
+phone : doc.phone,
+blood_group:doc.blood_group,
+dob:doc.dob,
+district:doc.district,
+state:doc.state,
+city:doc.city,
+country:doc.country
+
+
+}));
+setUser(userdata);
+
+  }
+  fetchdata();
+ })
   return (
     <section className='p-5'>
     <table className="w-full h-auto border border-black">
@@ -57,25 +54,25 @@ function DataTable() {
         </thead>
         <tbody>
           {
-            data.map((user)=>(
-              <tr key={user.id}>
+            user.map((doc)=>(
+              <tr key={doc.id}>
                 <td className='border border-black text-center'>
-                  {user.name}
+                  {doc.name}
                 </td>
                 <td className='border border-black text-center'>
-                  {user.blood}
+                  {doc.blood_group}
                 </td>
                 <td className='border border-black text-center'>
-                  {user.dob}
+                  {doc.dob}
                 </td>
                 <td className='border border-black text-center'>
-                  {user.phone}
+                  {doc.phone}
                 </td>
                 <td className='border border-black text-center'>
-                  {user.place}
+                  {doc.district+doc.city+doc.state+doc.country}
                 </td>
                 <td className='border border-black text-center'>
-                  {user.status}
+                  {doc.status}
                 </td>
               </tr>
             ))

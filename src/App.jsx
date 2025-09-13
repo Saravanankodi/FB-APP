@@ -49,14 +49,14 @@ function App() {
     
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/>
     <Header/>
     <About/>
     <Features/>
     <Contact/>
-    <Footer/>
+    <Footer/> */}
+    <DataTable/>
     </>
   )
 }
-
 export default App
