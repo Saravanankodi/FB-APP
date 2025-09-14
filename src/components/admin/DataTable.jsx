@@ -3,30 +3,28 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase_config';
 
 function DataTable() {
- const[user,setUser]=useState([]);
- useEffect(()=>{
-  const fetchdata = async () => {
-const querySnapshot = await 
-getDocs(collection(db,'user_profile')) ;
-const userdata =querySnapshot.docs.map((doc)=>
-({
- id:doc.Id,
-name :doc.name,
-phone : doc.phone,
-blood_group:doc.blood_group,
-dob:doc.dob,
-district:doc.district,
-state:doc.state,
-city:doc.city,
-country:doc.country
-
-
-}));
-setUser(userdata);
-
-  }
-  fetchdata();
- })
+  const [users,setUsers] = useState([]);
+  useEffect(()=>{
+    const fetchData = async ()=>{
+      const querySnapshot = await getDocs(collection(db,'user_profile'));
+      const userData = querySnapshot.docs.map(doc=>(
+        {
+          id:doc.id,
+          name :doc.name,
+          phone : doc.phone,
+          blood_group:doc.blood_group,
+          dob:doc.dob,
+          district:doc.district,
+          state:doc.state,
+          city:doc.city,
+          country:doc.country
+        }
+      ));
+      setUsers(userData);
+      console.log("data fetched")
+    };
+    fetchData();
+  },[]);
   return (
     <section className='p-5'>
     <table className="w-full h-auto border border-black">
@@ -53,30 +51,34 @@ setUser(userdata);
           </tr>
         </thead>
         <tbody>
-          {
-            user.map((doc)=>(
-              <tr key={doc.id}>
+          {users.length>0 ? (
+            users.map(user=>(
+              <tr key={user.id}>
                 <td className='border border-black text-center'>
-                  {doc.name}
+                  {user.name}
                 </td>
                 <td className='border border-black text-center'>
-                  {doc.blood_group}
+                  {user.blood_group}
                 </td>
                 <td className='border border-black text-center'>
-                  {doc.dob}
+                  {user.dob}
                 </td>
                 <td className='border border-black text-center'>
-                  {doc.phone}
+                  {user.phone}
                 </td>
                 <td className='border border-black text-center'>
-                  {doc.district+doc.city+doc.state+doc.country}
+                  {user.district+user.city+user.state+user.country}
                 </td>
                 <td className='border border-black text-center'>
-                  {doc.status}
+                  {user.status}
                 </td>
               </tr>
             ))
-          }
+          ) : (
+            <tr>
+              <td>no data</td>
+            </tr>
+          )}
         </tbody>
     </table>
     </section>
