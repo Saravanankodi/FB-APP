@@ -16,6 +16,17 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
+
+let analytics;
+if (process.env.NODE_ENV === "production") {
+  isSupported().then((yes) => {
+    if (yes) {
+      analytics = getAnalytics(app);
+    }
+  });
+}
+
+export { app, analytics };
+
 export const db = getFirestore(app);
 export const auth = getAuth(app);

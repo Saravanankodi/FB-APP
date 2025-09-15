@@ -6,13 +6,13 @@ function DataTable() {
   const [users,setUsers] = useState([]);
   useEffect(()=>{
     const fetchData = async ()=>{
-      const querySnapshot = await getDocs(collection(db,'user_profile'));
+      const querySnapshot = await getDocs(collection(db,'user_profiles'));
       const userData = querySnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
         }));
       setUsers(userData);
-      console.log("data fetched")
+
     };
     fetchData();
   },[]);
@@ -61,7 +61,7 @@ function DataTable() {
                   {[user.district, user.city, user.state, user.country].filter(Boolean).join(', ')}
                 </td>
                 <td className='border border-black text-center'>
-                  {user.status}
+                  {user.availability}
                 </td>
               </tr>
             ))
