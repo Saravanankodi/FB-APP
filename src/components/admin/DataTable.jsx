@@ -67,7 +67,7 @@ function DataTable() {
             ))
           ) : (
             <tr>
-              <td>no data</td>
+              <td>No Data </td>
             </tr>
           )}
         </tbody>
