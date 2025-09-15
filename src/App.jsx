@@ -8,6 +8,8 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import DataTable from './components/admin/DataTable'
+import Fillter from './components/admin/Fillter'
+import Input from './components/base/Input'
 
 function App() {
   // useEffect(()=>{
@@ -55,6 +57,7 @@ function App() {
     <Features/>
     <Contact/>
     <Footer/> */}
+    <Fillter/>
     <DataTable/>
     </>
   )
