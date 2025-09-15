@@ -7,19 +7,10 @@ function DataTable() {
   useEffect(()=>{
     const fetchData = async ()=>{
       const querySnapshot = await getDocs(collection(db,'user_profile'));
-      const userData = querySnapshot.docs.map(doc=>(
-        {
-          id:doc.id,
-          name :doc.name,
-          phone : doc.phone,
-          blood_group:doc.blood_group,
-          dob:doc.dob,
-          district:doc.district,
-          state:doc.state,
-          city:doc.city,
-          country:doc.country
-        }
-      ));
+      const userData = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
       setUsers(userData);
       console.log("data fetched")
     };
@@ -66,8 +57,8 @@ function DataTable() {
                 <td className='border border-black text-center'>
                   {user.phone}
                 </td>
-                <td className='border border-black text-center'>
-                  {user.district+user.city+user.state+user.country}
+                <td className='border border-black text-center '>
+                  {[user.district, user.city, user.state, user.country].filter(Boolean).join(', ')}
                 </td>
                 <td className='border border-black text-center'>
                   {user.status}
