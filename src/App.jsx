@@ -57,7 +57,7 @@ function App() {
     <Features/>
     <Contact/>
     <Footer/> */}
-    <Fillter/>
+    {/* <Fillter/> */}
     <DataTable/>
     </>
   )
