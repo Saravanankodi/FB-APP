@@ -111,22 +111,22 @@ function DataTable() {
     <table className="w-full h-auto border border-black">
         <thead className="bg-white">
           <tr>
-            <th className="border border-black">
+            <th className="border border-black heading">
               Name
             </th>
-            <th className="w-fit border border-black">
+            <th className="w-fit border border-black heading">
               Blood Group
             </th>
-            <th className="border border-black">
+            <th className="border border-black heading">
               DOB
             </th>
-            <th className="border border-black">
+            <th className="border border-black heading">
               Phone
             </th>
-            <th className="border border-black">
+            <th className="border border-black heading">
               Place
             </th>
-            <th className="border border-black">
+            <th className="border border-black heading">
               Status
             </th>
           </tr>

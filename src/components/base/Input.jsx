@@ -14,7 +14,7 @@ function Input({label,name,value,type,onchange}) {
             placeholder='touer'/>
         {
             label && (
-                <label htmlFor={name} className='absolute -top-1 left-0 -translate-y-1/2 text-black peer-focus:-top-1 peer-focus:text-[#0496ff] peer-placeholder-shown:top-1/2 transition-all'>
+                <label htmlFor={name} className='absolute -top-1 left-0 -translate-y-1/2 heading text-black peer-focus:-top-1 peer-focus:text-[#0496ff] peer-placeholder-shown:top-1/2 transition-all'>
                     {label}
                 </label>
             )
