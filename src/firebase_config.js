@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import{getAuth} from "firebase/auth";
 import{getFirestore} from "firebase/firestore";
 
@@ -17,16 +17,16 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-let analytics;
-if (process.env.NODE_ENV === "production") {
-  isSupported().then((yes) => {
-    if (yes) {
-      analytics = getAnalytics(app);
-    }
-  });
-}
+// let analytics;
+// if (process.env.NODE_ENV === "production") {
+//   isSupported().then((yes) => {
+//     if (yes) {
+//       analytics = getAnalytics(app);
+//     }
+//   });
+// }
 
-export { app, analytics };
+// export { app, analytics };
 
 export const db = getFirestore(app);
 export const auth = getAuth(app);
