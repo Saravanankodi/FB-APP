@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Navbar from './components/Navbar'
 import DataTable from './components/admin/DataTable'
 import Fillter from './components/admin/Fillter'
+import Login from './components/admin/Login'
 import Input from './components/base/Input'
 
 function App() {
@@ -58,7 +59,10 @@ function App() {
     <Contact/>
     <Footer/> */}
     {/* <Fillter/> */}
-    <DataTable/>
+    {/* <DataTable/> */}
+    <section className="w-full h-screen flex item-center justify-center">
+      <Login/>
+    </section>
     </>
   )
 }
