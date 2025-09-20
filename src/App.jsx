@@ -52,17 +52,17 @@ function App() {
     
   return (
     <>
-    {/* <Navbar/>
+    <Navbar/>
     <Header/>
     <About/>
     <Features/>
     <Contact/>
-    <Footer/> */}
+    <Footer/>
     {/* <Fillter/> */}
     {/* <DataTable/> */}
-    <section className="w-full h-screen flex item-center justify-center">
+    {/* <section className="w-full h-screen flex item-center justify-center">
       <Login/>
-    </section>
+    </section> */}
     </>
   )
 }
